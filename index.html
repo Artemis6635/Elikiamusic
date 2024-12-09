@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de musique</title>
+  <link rel="stylesheet" href="styles.css">
+  <style type="text/css">
+    /* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("da.png");
+  background-size: cover;
+  font-size: 16px;
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+      body {
+        font-size: 20px;
+      }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+   position: relative; /* Ajoutez cette ligne */
+}
+
+h1 {
+  font-size: 24px;
+}
+span {
+  color: yellow;
+}
+nav {
+  display: flex; /* Ajoutez cette ligne */
+  align-items: center; /* Ajoutez cette ligne */
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+footer {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+.search-form {
+  margin-left: 20px;
+    margin-left: auto; /* Ajoutez cette ligne */
+  margin-top: 10px; /* Ajoutez cette ligne */
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-form button[type="submit"] {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: #e6b800;
+}
+.logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.logo a {
+  display: block;
+  width: 80px; /* Ajustez la largeur selon vos besoins */
+  height: 80px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ footer {
+  
+ 
+position: fixed;
+  
+ 
+left: 0;
+  
+ 
+bottom: 0;
+  
+ 
+width: 100%;
+  
+ 
+background-color: rgba(51, 51, 51, 0.8);
+  
+ 
+color: #fff;
+  padding: 20px 0;
+}
+
+/* Le reste du code CSS reste inchangé */
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-rights {
+  font-size: 12px;
+}
+
+.footer-created {
+  font-size: 12px;
+}
+
+.footer-intro {
+  text-align: right;
+}
+
+.intro-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+  </style>
+  <script type="text/javascript">
+    document.querySelector('.search-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Empêche le rechargement de la page lors de la soumission du formulaire
+
+  var searchTerm = document.querySelector('.search-form input[name="search"]').value;
+  // Ici, vous pouvez utiliser searchTerm pour effectuer une action de recherche, par exemple, rediriger vers une autre page ou afficher les résultats de recherche sur la même page.
+  // Vous pouvez personnaliser cette logique en fonction de vos besoins.
+
+  console.log('Term de recherche:', searchTerm);
+});
+  </script>
+</head>
+<body>
+ <header>
+  <div class="container">
+    <div class="logo">
+      <a href="#"><img src="3D LOGO COMPLETT 2021.png" alt="Logo"></a>
+    </div>
+    <h1>Elikia <span>Musique</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="projet etudiant.html">Administrateur</a></li>
+        <li><a href="#artiste">Artiste</a></li>
+      </ul>
+      <form action="#" method="get" class="search-form">
+        <input type="text" name="search" placeholder="Rechercher...">
+        <button type="submit">Rechercher</button>
+      </form>
+    </nav>
+  </div>
+</header>
+
+  <section id="accueil">
+    <div class="container">
+      <h2> <font color="white">Bienvenue sur notre site de musique</font></h2>
+      <p></p>
+      <a href="#contact" class="btn">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- Ajoutez les autres sections ici -->
+
+ <footer>
+  <div class="container">
+    <div class="footer-info">
+      <p class="footer-rights">Tous droits réservés &copy; 2023 | Elikia Musique Studio</p>
+      <p class="footer-created">Créé le 4 octobre 2002</p>
+    </div>
+    <div class="footer-intro">
+      <h3 class="intro-title">Explorez votre talent musical avec Elikia Musique Studio</h3>
+      <p class="intro-text">Laissez-vous transporter par les mélodies envoûtantes et les rythmes enflammés. Notre studio, dédié à l'expression artistique, a pour mission de vous aider à faire briller votre talent musical.</p>
+      <p class="intro-text">Rejoignez-nous et découvrez un univers riche en créativité, où chaque note résonne avec émotion et chaque artiste est soutenu pour atteindre de nouveaux sommets de succès.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
